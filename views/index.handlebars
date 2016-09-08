@@ -1,0 +1,13 @@
+<h1>It's working!</h1>
+<h3>Click user to toggle activation: </h3>
+<div>
+{{#each users}}
+	<p>
+		<a href="/change-status/{{ id }}">
+  		{{#if active}}✓{{else}}x{{/if}}
+  		{{name}}
+  	</a>
+  </p>
+{{/each}}
+<p> You have been here {{times}} times!
+</div>

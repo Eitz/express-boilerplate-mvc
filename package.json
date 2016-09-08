@@ -1,0 +1,28 @@
+{
+  "name": "express-boilerplate-mvc",
+  "version": "0.0.1",
+  "description": "Boilerplate for Node.JS with Express, Handlebars and simple ORM for MysqL. Using the MVC pattern.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eitz/express-boilerplate-mvc"
+  },
+  "author": "",
+  "license": "UNLICENSE",
+  "bugs": {
+    "url": "https://github.com/Eitz/express-boilerplate-mvc/issues"
+  },
+  "homepage": "https://github.com/Eitz/express-boilerplate-mvc",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.1",
+    "mysql": "^2.11.1",
+    "nodemon": "^1.10.2"
+  }
+}
