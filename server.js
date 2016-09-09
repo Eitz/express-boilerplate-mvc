@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 // dynamically include routes (Controllers)
 function loadController(file) {
 	if(file.substr(-3) === '.js') {
-  	route = require('./controllers/' + file)
+  	let route = require('./controllers/' + file)
   	route.controller(app)
   }	
 }

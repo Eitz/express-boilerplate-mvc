@@ -1,21 +1,17 @@
-var orm = require('../util/orm.js');
+const Model = require('./model.js');
 
-var user = {
-	get: function (condition, cb) {
-		orm.get('user', condition, cb);
-	},
+class User extends Model {
 
-	all: function(condition, cb) {
-		orm.all('user', condition, cb);
-	},
-
-	create: function(cols, vals, cb) {
-		orm.create('user', cols, vals, cb);
-	},
-
-	update: function(objColVals, condition, cb) {
-		orm.update('user', objColVals, condition, cb);
+	constructor (props) {
+		this.name = props.name; 
+		this.date = new Date(props.date);
+		this.active = !!props.active;
 	}
-};
 
-module.exports = user;
+	static get tableName() {
+		return 'user';
+	}
+
+}
+
+module.exports = User;
